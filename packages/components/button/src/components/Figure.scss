@@ -1,0 +1,34 @@
+.figure-button {
+  font-weight: 400;
+  display: flex;
+  flex-basis: content;
+  font-family: var(--v-font-family);
+  font-size: var(--v-font-size);
+  line-height: var(--v-line-height);
+  border-radius: var(--v-border-radius);
+  border-width: var(--v-border-width);
+  cursor: pointer;
+}
+
+.figure-button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.figure-button.disable {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+// -------------------------------- //
+
+.figure-button.size-default {
+  padding: 5px 15px;
+}
+
+.figure-button.size-small {
+  padding: 2px 8px;
+}
+
+.figure-button.size-large {
+  padding: 8px 15px;
+}

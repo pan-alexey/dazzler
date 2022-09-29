@@ -1,0 +1,159 @@
+:root {
+  --v-color-background: #181818;
+  --v-color-border: rgba(255, 255, 255, 0.2);
+  --v-color-divider: rgba(255, 255, 255, 0.15);
+  --v-color-menu: #212121;
+  --v-color-hover: #3D3D3D;
+  --v-color-text: #DCDCDC;
+  --v-color-text-default: #DCDCDC;
+  --v-color-text-secondary: #AAAAAA;
+  --v-color-content: rgba(255, 255, 255, 0.95);
+  --v-color-link: rgba(64, 169, 255, 0.9);
+  --v-color-link-hover: rgba(24, 144, 255, 0.9);
+  --v-color-primary: rgba(24, 144, 255, 0.9);
+  --v-color-primary-hover: rgba(21, 126, 251, 0.9);
+  --v-color-success: rgba(82, 196, 26, 0.9);
+  --v-color-success-hover: rgba(56, 158, 13, 0.9);
+  --v-color-warning: rgba(250, 173, 20, 0.9);
+  --v-color-warning-hover: rgba(212, 136, 6, 0.9);
+  --v-color-error: rgba(245, 34, 45, 0.9);
+  --v-color-error-hover: rgba(207, 19, 34, 0.9);
+  --v-color-level-1: rgba(0, 0, 0, 0.85);
+  --v-color-level-2: rgba(0, 0, 0, 0.65);
+  --v-color-level-3: rgba(0, 0, 0, 0.45);
+  --v-color-level-4: rgba(0, 0, 0, 0.3);
+  --v-color-level-5: rgba(0, 0, 0, 0.2);
+  --v-color-level-6: rgba(0, 0, 0, 0.15);
+  --v-color-level-7: rgba(0, 0, 0, 0.1);
+  --v-color-level-8: rgba(0, 0, 0, 0.05);
+}
+
+:root {
+  --v-font-family: Arial, Helvetica, sans-serif;
+  --v-font-size: 14px;
+  --v-line-height: 16px;
+  --v-font-size-h1: 36px;
+  --v-line-height-h1: 42px;
+  --v-font-size-h2: 28px;
+  --v-line-height-h2: 32px;
+  --v-font-size-h3: 24px;
+  --v-line-height-h3: 26px;
+  --v-font-size-h4: 18px;
+  --v-line-height-h4: 22px;
+  --v-font-size-h5: 16px;
+  --v-line-height-h5: 18px;
+  --v-border-width: 1px;
+  --v-border-radius: 2px;
+  --v-padding-default: 5px 15px;
+  --v-padding-small: 5px 8px;
+  --v-padding-large: 5px 15px;
+  --v-height-default: 26px;
+  --v-height-small: 20px;
+  --v-height-large: 32px;
+}
+:root {
+  --v-color-background: #181818;
+  --v-color-border: rgba(255, 255, 255, 0.2);
+  --v-color-divider: rgba(255, 255, 255, 0.15);
+  --v-color-menu: #212121;
+  --v-color-hover: #3D3D3D;
+  --v-color-text: #DCDCDC;
+  --v-color-text-default: #DCDCDC;
+  --v-color-text-secondary: #AAAAAA;
+  --v-color-content: rgba(255, 255, 255, 0.95);
+  --v-color-link: rgba(64, 169, 255, 0.9);
+  --v-color-link-hover: rgba(24, 144, 255, 0.9);
+  --v-color-primary: rgba(24, 144, 255, 0.9);
+  --v-color-primary-hover: rgba(21, 126, 251, 0.9);
+  --v-color-success: rgba(82, 196, 26, 0.9);
+  --v-color-success-hover: rgba(56, 158, 13, 0.9);
+  --v-color-warning: rgba(250, 173, 20, 0.9);
+  --v-color-warning-hover: rgba(212, 136, 6, 0.9);
+  --v-color-error: rgba(245, 34, 45, 0.9);
+  --v-color-error-hover: rgba(207, 19, 34, 0.9);
+  --v-color-level-1: rgba(0, 0, 0, 0.85);
+  --v-color-level-2: rgba(0, 0, 0, 0.65);
+  --v-color-level-3: rgba(0, 0, 0, 0.45);
+  --v-color-level-4: rgba(0, 0, 0, 0.3);
+  --v-color-level-5: rgba(0, 0, 0, 0.2);
+  --v-color-level-6: rgba(0, 0, 0, 0.15);
+  --v-color-level-7: rgba(0, 0, 0, 0.1);
+  --v-color-level-8: rgba(0, 0, 0, 0.05);
+}
+
+:root {
+  --v-font-family: Arial, Helvetica, sans-serif;
+  --v-font-size: 14px;
+  --v-line-height: 16px;
+  --v-font-size-h1: 36px;
+  --v-line-height-h1: 42px;
+  --v-font-size-h2: 28px;
+  --v-line-height-h2: 32px;
+  --v-font-size-h3: 24px;
+  --v-line-height-h3: 26px;
+  --v-font-size-h4: 18px;
+  --v-line-height-h4: 22px;
+  --v-font-size-h5: 16px;
+  --v-line-height-h5: 18px;
+  --v-border-width: 1px;
+  --v-border-radius: 2px;
+  --v-padding-default: 5px 15px;
+  --v-padding-small: 5px 8px;
+  --v-padding-large: 5px 15px;
+  --v-height-default: 26px;
+  --v-height-small: 20px;
+  --v-height-large: 32px;
+}
+:root {
+  --v-color-background: #181818;
+  --v-color-border: rgba(255, 255, 255, 0.2);
+  --v-color-divider: rgba(255, 255, 255, 0.15);
+  --v-color-menu: #212121;
+  --v-color-hover: #3D3D3D;
+  --v-color-text: #DCDCDC;
+  --v-color-text-default: #DCDCDC;
+  --v-color-text-secondary: #AAAAAA;
+  --v-color-content: rgba(255, 255, 255, 0.95);
+  --v-color-link: rgba(64, 169, 255, 0.9);
+  --v-color-link-hover: rgba(24, 144, 255, 0.9);
+  --v-color-primary: rgba(24, 144, 255, 0.9);
+  --v-color-primary-hover: rgba(21, 126, 251, 0.9);
+  --v-color-success: rgba(82, 196, 26, 0.9);
+  --v-color-success-hover: rgba(56, 158, 13, 0.9);
+  --v-color-warning: rgba(250, 173, 20, 0.9);
+  --v-color-warning-hover: rgba(212, 136, 6, 0.9);
+  --v-color-error: rgba(245, 34, 45, 0.9);
+  --v-color-error-hover: rgba(207, 19, 34, 0.9);
+  --v-color-level-1: rgba(0, 0, 0, 0.85);
+  --v-color-level-2: rgba(0, 0, 0, 0.65);
+  --v-color-level-3: rgba(0, 0, 0, 0.45);
+  --v-color-level-4: rgba(0, 0, 0, 0.3);
+  --v-color-level-5: rgba(0, 0, 0, 0.2);
+  --v-color-level-6: rgba(0, 0, 0, 0.15);
+  --v-color-level-7: rgba(0, 0, 0, 0.1);
+  --v-color-level-8: rgba(0, 0, 0, 0.05);
+}
+
+:root {
+  --v-font-family: Arial, Helvetica, sans-serif;
+  --v-font-size: 14px;
+  --v-line-height: 16px;
+  --v-font-size-h1: 36px;
+  --v-line-height-h1: 42px;
+  --v-font-size-h2: 28px;
+  --v-line-height-h2: 32px;
+  --v-font-size-h3: 24px;
+  --v-line-height-h3: 26px;
+  --v-font-size-h4: 18px;
+  --v-line-height-h4: 22px;
+  --v-font-size-h5: 16px;
+  --v-line-height-h5: 18px;
+  --v-border-width: 1px;
+  --v-border-radius: 2px;
+  --v-padding-default: 5px 15px;
+  --v-padding-small: 5px 8px;
+  --v-padding-large: 5px 15px;
+  --v-height-default: 26px;
+  --v-height-small: 20px;
+  --v-height-large: 32px;
+}

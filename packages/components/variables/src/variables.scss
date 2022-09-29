@@ -1,0 +1,42 @@
+$prefix: '--v-';
+
+$font-family: Arial, Helvetica, sans-serif;
+$font-size: 14px;
+$line-height: 16px;
+
+$padding-default: 5px;
+$padding-small: 2px;
+$padding-large: 8px;
+
+$variables: (
+  font-family: $font-family,
+
+  font-size: $font-size,
+  line-height: $line-height,
+
+  font-size-h1: 36px,
+  line-height-h1: 42px,
+
+  font-size-h2: 28px,
+  line-height-h2: 32px,
+
+  font-size-h3: 24px,
+  line-height-h3: 26px,
+
+  font-size-h4: 18px,
+  line-height-h4: 22px,
+
+  font-size-h5: 16px,
+  line-height-h5: 18px,
+
+  border-width: 1px,
+  border-radius: 2px,
+
+  padding-default: $padding-default 15px,
+  padding-small: $padding-default 8px,
+  padding-large: $padding-default 15px,
+
+  height-default:  2 * $padding-default + $line-height,
+  height-small:  2 * $padding-small + $line-height,
+  height-large:  2 * $padding-large + $line-height,
+);

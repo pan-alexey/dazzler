@@ -1,0 +1,42 @@
+{
+  "name": "dazzler",
+  "version": "1.0.0",
+  "description": "Yet another ui-kit",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "config/**",
+      "packages/**",
+      "examples/**"
+    ],
+    "nohoist": [
+      "**/jest",
+      "**/ts-node",
+      "**/@dazzler/eslint-*",
+      "**/@dazzler/prettier-*"
+    ]
+  },
+  "scripts": {
+    "dev": "yarn run clear && yarn run bootstrap",
+    "bootstrap": "yarn install && yarn run lerna:bootstrap",
+    "🔥": "----------------------------------------",
+    "lerna:bootstrap": "lerna bootstrap",
+    "clear": "rimraf ./**/package-lock.json && rimraf ./**/yarn.lock && rimraf ./**/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pan-alexey/dazzler.git"
+  },
+  "author": "Pan Alexey [pan-alexey@live.com]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pan-alexey/dazzler/issues"
+  },
+  "homepage": "https://github.com/pan-alexey/dazzler#readme",
+  "dependencies": {
+    "lerna": "^5.5.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

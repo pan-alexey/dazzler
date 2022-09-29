@@ -1,0 +1,47 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+$colors: (
+  color-background: #181818,
+  color-border: rgba(#FFFFFF, .2),
+  color-divider: rgba(#FFFFFF, .15),
+
+  color-menu: #212121,
+  color-hover: #3D3D3D,
+
+  color-text: #DCDCDC,
+  color-text-default: #DCDCDC,
+  color-text-secondary: #AAAAAA,
+
+  color-content: rgba(#FFFFFF, .95),
+
+  color-link: rgba(#40A9FF, 0.9),
+  color-link-hover: rgba(#1890FF, 0.9),
+
+  color-primary: rgba(#1890FF, 0.9),
+  color-primary-hover: rgba(#157EFB, 0.9),
+
+  color-success: rgba(#52C41A, 0.9),
+  color-success-hover: rgba(#389E0D, 0.9),
+
+  color-warning: rgba(#FAAD14, 0.9),
+  color-warning-hover: rgba(#D48806, 0.9),
+
+  color-error: rgba(#F5222D, 0.9),
+  color-error-hover: rgba(#CF1322, 0.9),
+
+  color-level-1: rgba(#000, 0.85),
+  color-level-2: rgba(#000, 0.65),
+  color-level-3: rgba(#000, 0.45),
+  color-level-4: rgba(#000, 0.30),
+  color-level-5: rgba(#000, 0.20),
+  color-level-6: rgba(#000, 0.15),
+  color-level-7: rgba(#000, 0.10),
+  color-level-8: rgba(#000, 0.05),
+);
+
+@include export($colors, "export", $prefix);
+@include export($variables, "export", $prefix);
+
+@include export($colors, "root", $prefix);
+@include export($variables, "root", $prefix);
