@@ -1,60 +1,101 @@
 import * as React from 'react';
 import './Button.scss';
 
-export type Ref = HTMLButtonElement;
-
-export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children?: React.ReactNode;
-  className?: string;
-  kind?: 'default' | 'dashed' | 'outline' | 'text';
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+  varian?: 'default' | 'dashed' | 'outline' | 'text';
   color?: 'default' | 'primary' | 'success' | 'warning' | 'error';
   size?: 'default' | 'large' | 'small';
-  disable?: boolean;
+  block?: boolean;
+  disallow?: boolean;
+  disabled?: boolean;
 }
 
-const Button = React.forwardRef<Ref, Props>((props, ref) => {
-  const {
-    kind = 'default',
-    color = 'default',
-    size = 'default',
-    className = '',
-    children,
-    disable = false,
-  } = props;
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (props, ref) => {
+    const {
+      varian = 'default',
+      color = 'default',
+      size = 'default',
+      block = false,
+      disallow = false,
+      className,
+      children,
+      ...restProps
+    } = props;
 
-  const classNames = [
-    'button',
-    `button-${kind}`,
-    `color-${color}`,
-    `size-${size}`,
-    disable || props.disabled ? 'disable' : '',
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
+    const memoClassName = React.useMemo(
+      () =>
+        [
+          'd-btn',
+          `d-btn-${varian}`,
+          `d-btn-color-${color}`,
+          `d-btn-size-${size}`,
+          block ? 'd-btn-block' : '',
+          disallow ? 'd-btn-disallow' : '',
+          className,
+        ]
+          .filter(Boolean)
+          .join(' '),
+      [className, varian, color, size, disallow],
+    );
 
-  const clearProps = Object.fromEntries(
-    Object.entries(props).filter(
-      ([key]) =>
-        ![
-          'kind',
-          'color',
-          'size',
-          'className',
-          'children',
-          'ref',
-          'disable',
-        ].includes(key),
-    ),
-  );
-
-  return (
-    <button ref={ref} {...clearProps} className={classNames}>
-      {children}
-    </button>
-  );
-});
+    return (
+      <button {...restProps} ref={ref} className={memoClassName}>
+        {children}
+      </button>
+    );
+  },
+);
 
 Button.displayName = 'Button';
 
-export { Button };
+export interface ButtonLinkProps
+  extends React.HTMLAttributes<HTMLAnchorElement> {
+  varian?: 'default' | 'dashed' | 'outline' | 'text';
+  color?: 'default' | 'primary' | 'success' | 'warning' | 'error';
+  size?: 'default' | 'large' | 'small';
+  block?: boolean;
+  disallow?: boolean;
+  disabled?: boolean;
+}
+
+const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
+  (props, ref) => {
+    const {
+      varian = 'default',
+      color = 'default',
+      size = 'default',
+      block = false,
+      disallow = false,
+      className,
+      children,
+      ...restProps
+    } = props;
+
+    const memoClassName = React.useMemo(
+      () =>
+        [
+          'd-btn',
+          `d-btn-${varian}`,
+          `d-btn-color-${color}`,
+          `d-btn-size-${size}`,
+          block ? 'd-btn-block' : '',
+          disallow ? 'd-btn-disallow' : '',
+          className,
+        ]
+          .filter(Boolean)
+          .join(' '),
+      [className, varian, color, size, disallow],
+    );
+
+    return (
+      <a ref={ref} {...restProps} className={memoClassName}>
+        {children}
+      </a>
+    );
+  },
+);
+
+ButtonLink.displayName = 'ButtonLink';
+
+export { Button, ButtonLink };

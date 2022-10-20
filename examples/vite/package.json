@@ -8,8 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dazzler/utils-react-children": "^1.0.0",
     "@dazzler/variables": "^1.0.0",
     "@dazzler/button": "^1.0.0",
+    "@dazzler/text": "^1.0.0",
+    "@dazzler/divider": "^1.0.0",
+    "@dazzler/list": "^1.0.0",
+    "react-icons":"^4.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -2,42 +2,42 @@
 @import "../variables.scss";
 
 $colors: (
-  color-background: #181818,
-  color-border: rgba(#FFFFFF, .2),
-  color-divider: rgba(#FFFFFF, .15),
+  color-background: #FFFFFF,
+  color-border: rgba(#000000, .2),
 
-  color-menu: #212121,
-  color-hover: #3D3D3D,
+  color-menu: #FAFAFA,
+  color-active: #F5F5F5,
+  color-hover: #E9E9E9,
 
-  color-text: #DCDCDC,
-  color-text-default: #DCDCDC,
-  color-text-secondary: #AAAAAA,
+  color-text: #242424,
+  color-text-default: #242424,
+  color-text-secondary: #8C8C8C,
 
-  color-content: rgba(#FFFFFF, .95),
+  color-content: #FFFFFF,
 
-  color-link: rgba(#40A9FF, 0.9),
-  color-link-hover: rgba(#1890FF, 0.9),
+  color-link: #40A9FF,
+  color-link-hover: #1890FF,
 
-  color-primary: rgba(#1890FF, 0.9),
-  color-primary-hover: rgba(#157EFB, 0.9),
+  color-primary: #1890FF,
+  color-primary-hover: #157EFB,
 
-  color-success: rgba(#52C41A, 0.9),
-  color-success-hover: rgba(#389E0D, 0.9),
+  color-success: #52C41A,
+  color-success-hover: #389E0D,
 
-  color-warning: rgba(#FAAD14, 0.9),
-  color-warning-hover: rgba(#D48806, 0.9),
+  color-warning: #FAAD14,
+  color-warning-hover: #D48806,
 
-  color-error: rgba(#F5222D, 0.9),
-  color-error-hover: rgba(#CF1322, 0.9),
+  color-error: #F5222D,
+  color-error-hover: #CF1322,
 
-  color-level-1: rgba(#000, 0.85),
-  color-level-2: rgba(#000, 0.65),
-  color-level-3: rgba(#000, 0.45),
-  color-level-4: rgba(#000, 0.30),
-  color-level-5: rgba(#000, 0.20),
-  color-level-6: rgba(#000, 0.15),
-  color-level-7: rgba(#000, 0.10),
-  color-level-8: rgba(#000, 0.05),
+  color-level-1: rgba(#FFFFFF, 0.85),
+  color-level-2: rgba(#FFFFFF, 0.65),
+  color-level-3: rgba(#FFFFFF, 0.45),
+  color-level-4: rgba(#FFFFFF, 0.30),
+  color-level-5: rgba(#FFFFFF, 0.20),
+  color-level-6: rgba(#FFFFFF, 0.15),
+  color-level-7: rgba(#FFFFFF, 0.10),
+  color-level-8: rgba(#FFFFFF, 0.05),
 );
 
 @include export($colors, "export", $prefix);

@@ -6,13 +6,13 @@ export type Ref = HTMLButtonElement;
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
   className?: string;
-  kind?: 'default' | 'round' | 'circle';
+  kind?: 'default' | 'dashed' | 'outline' | 'text';
   color?: 'default' | 'primary' | 'success' | 'warning' | 'error';
   size?: 'default' | 'large' | 'small';
   disable?: boolean;
 }
 
-const Figure = React.forwardRef<Ref, Props>((props, ref) => {
+const Button = React.forwardRef<Ref, Props>((props, ref) => {
   const {
     kind = 'default',
     color = 'default',
@@ -22,39 +22,47 @@ const Figure = React.forwardRef<Ref, Props>((props, ref) => {
     disable = false,
   } = props;
 
-  const classNames = [
-    'button',
-    `button-${kind}`,
-    `color-${color}`,
-    `size-${size}`,
-    disable || props.disabled ? 'disable' : '',
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
+  const memoClassName = React.useMemo(
+    () =>
+      [
+        'figure-button',
+        `button-${kind}`,
+        `color-${color}`,
+        `size-${size}`,
+        disable || props.disabled ? 'disable' : '',
+        className,
+      ]
+        .filter(Boolean)
+        .join(' '),
+    [props],
+  );
 
-  const clearProps = Object.fromEntries(
-    Object.entries(props).filter(
-      ([key]) =>
-        ![
-          'kind',
-          'color',
-          'size',
-          'className',
-          'children',
-          'ref',
-          'disable',
-        ].includes(key),
-    ),
+  const clearProps = React.useMemo(
+    () =>
+      Object.fromEntries(
+        Object.entries(props).filter(
+          ([key]) =>
+            ![
+              'kind',
+              'color',
+              'size',
+              'className',
+              'children',
+              'ref',
+              'disable',
+            ].includes(key),
+        ),
+      ),
+    [props],
   );
 
   return (
-    <button ref={ref} {...clearProps} className={classNames}>
+    <button ref={ref} {...clearProps} className={memoClassName}>
       {children}
     </button>
   );
 });
 
-Figure.displayName = 'Button';
+Button.displayName = 'Button';
 
-export { Figure };
+export { Button };

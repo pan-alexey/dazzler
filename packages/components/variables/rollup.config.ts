@@ -1,14 +1,4 @@
 import postcss from 'rollup-plugin-postcss';
-import rollupPluginDelete from 'rollup-plugin-delete';
-
-const plugins = [
-  rollupPluginDelete(),
-  postcss({
-    minimize: process.env.NODE_ENV === 'production',
-    modules: true,
-    extract: true,
-  }),
-];
 
 export default [
   {
@@ -18,7 +8,13 @@ export default [
       format: 'esm',
       sourcemap: true,
     },
-    plugins,
+    plugins: [
+      postcss({
+        minimize: process.env.NODE_ENV === 'production',
+        modules: true,
+        extract: true,
+      }),
+    ]
   },
   {
     input: 'src/dark.tsx',
@@ -27,7 +23,13 @@ export default [
       format: 'esm',
       sourcemap: true,
     },
-    plugins,
+    plugins: [
+      postcss({
+        minimize: process.env.NODE_ENV === 'production',
+        modules: true,
+        extract: true,
+      }),
+    ]
   },
   {
     input: 'src/light.tsx',
@@ -36,6 +38,12 @@ export default [
       format: 'esm',
       sourcemap: true,
     },
-    plugins,
+    plugins: [
+      postcss({
+        minimize: process.env.NODE_ENV === 'production',
+        modules: true,
+        extract: true,
+      }),
+    ]
   }
 ]

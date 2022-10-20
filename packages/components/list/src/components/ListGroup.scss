@@ -1,0 +1,9 @@
+.dzl-list-group {
+  .dzl-list-item.dzl-active {
+    background: var(--dzl-color-active);
+  }
+  
+  .dzl-list-item:hover {
+    background: var(--dzl-color-hover);
+  }
+}

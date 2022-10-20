@@ -1,0 +1,42 @@
+{
+  "name": "@dazzler/utils-react-children",
+  "version": "1.0.0",
+  "description": "Yet another ui-kit",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "dev": "rollup -w --config rollup.config.ts --configPlugin typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pan-alexey/dazzler.git"
+  },
+  "author": "Pan Alexey [pan-alexey@live.com]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pan-alexey/dazzler/issues"
+  },
+  "homepage": "https://github.com/pan-alexey/dazzler#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^4.8.3",
+    "rollup":"^2.68.0",
+    "@types/react": "^18.0.18",
+    "@dazzler/eslint-config": "^1.0.0",
+    "@dazzler/prettier-config": "^1.0.0",
+    "postcss":"^8.4.16",
+    "rollup-plugin-peer-deps-external":"^2.2.4",
+    "@rollup/plugin-node-resolve":"^14.1.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "@rollup/plugin-typescript":"^8.5.0"
+  }
+}
