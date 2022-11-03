@@ -1,0 +1,9 @@
+@import "../_prefix_.scss";
+
+@mixin export($map, $scope) {
+  #{$scope} {
+    @each $name, $value in $map {
+      #{$prefix}#{$name}: $value;
+    }
+  }
+}

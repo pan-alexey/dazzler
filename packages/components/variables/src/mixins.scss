@@ -1,7 +1,0 @@
-@mixin export($map, $scope, $prefix) {
-  :#{$scope} {
-    @each $name, $value in $map {
-      #{$prefix}#{$name}: $value;
-    }
-  }
-}

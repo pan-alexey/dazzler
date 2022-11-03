@@ -1,0 +1,72 @@
+$font-family: Arial, Helvetica, sans-serif;
+$font-size: 14px;
+$line-height: 16px;
+
+$gap: 6px;
+
+$offset-vertical-default: 4px;
+$offset-vertical-small: 2px;
+$offset-vertical-large: 8px;
+
+$offset-horizontal-default: 12px;
+$offset-horizontal-small: 8px;
+$offset-horizontal-large: 16px;
+
+$variables: (
+  font-family: $font-family,
+
+  font-size: $font-size,
+  line-height: $line-height,
+
+  font-size-regular: $font-size,
+  line-height-regular: $line-height,
+
+  font-size-small: 12px,
+  line-height-small: 14px,
+
+  font-size-large: 16px,
+  line-height-large: 18px,
+
+  font-size-h1: 36px,
+  line-height-h1: 42px,
+
+  font-size-h2: 28px,
+  line-height-h2: 32px,
+
+  font-size-h3: 24px,
+  line-height-h3: 26px,
+
+  font-size-h4: 18px,
+  line-height-h4: 22px,
+
+  font-size-h5: 16px,
+  line-height-h5: 18px,
+
+  font-size-h6: 14px,
+  line-height-h6: 16px,
+
+  border-width: 1px,
+  border-radius: 2px,
+
+  gap: $gap,
+
+  offset-default: $offset-horizontal-default,
+  offset-small: $offset-horizontal-small,
+  offset-large: $offset-horizontal-large,
+
+  height-default:  2 * $offset-vertical-default + $line-height,
+  height-small:  2 * $offset-vertical-small + $line-height,
+  height-large:  2 * $offset-vertical-large + $line-height,
+
+  offset-vertical-default: $offset-vertical-default,
+  offset-vertical-small: $offset-vertical-small,
+  offset-vertical-large: $offset-vertical-large,
+
+  offset-horizontal-default: $offset-horizontal-default,
+  offset-horizontal-small: $offset-horizontal-small,
+  offset-horizontal-large: $offset-horizontal-large,
+);
+
+@import "./_mixin_.scss";
+@include export($variables, ":export");
+@include export($variables, ":root");

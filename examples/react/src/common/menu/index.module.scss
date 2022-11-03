@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemIcon {
+  font-size: 24px;
+  display: flex;
+}
+
+.routerLink {
+  display: block;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+      text-decoration: none;
+  }
+}
+
+.text__children {
+  border: 1px solid red;
+  display: flex;
+}

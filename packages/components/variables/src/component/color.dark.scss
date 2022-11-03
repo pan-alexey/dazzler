@@ -1,0 +1,42 @@
+$colors: (
+  color-background: #181818,
+  color-border: rgba(#FFFFFF, .2),
+
+  color-menu: #212121,
+  color-active: #323232,
+  color-hover: #3D3D3D,
+
+  color-text: #DCDCDC,
+  color-text-default: #DCDCDC,
+  color-text-secondary: #AAAAAA,
+
+  color-content: #FFFFFF,
+
+  color-link: #40A9FF,
+  color-link-hover: #1890FF,
+
+  color-primary: #1890FF,
+  color-primary-hover: #157EFB,
+
+  color-success: #52C41A,
+  color-success-hover: #389E0D,
+
+  color-warning: #FAAD14,
+  color-warning-hover: #D48806,
+
+  color-error: #F5222D,
+  color-error-hover: #CF1322,
+
+  color-level-1: rgba(#FFFFFF, 0.85),
+  color-level-2: rgba(#FFFFFF, 0.65),
+  color-level-3: rgba(#FFFFFF, 0.45),
+  color-level-4: rgba(#FFFFFF, 0.30),
+  color-level-5: rgba(#FFFFFF, 0.20),
+  color-level-6: rgba(#FFFFFF, 0.15),
+  color-level-7: rgba(#FFFFFF, 0.10),
+  color-level-8: rgba(#FFFFFF, 0.05),
+);
+
+@import "./_mixin_.scss";
+@include export($colors, ":export");
+@include export($colors, ":global .css-color-dark");

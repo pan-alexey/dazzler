@@ -1,0 +1,53 @@
+@import "./varibles.scss";
+
+$colors: (
+  color-background: #FFFFFF,
+  color-border: rgba(#000000, .2),
+
+  color-menu: #FAFAFA,
+  color-active: #F5F5F5,
+  color-hover: #E9E9E9,
+
+  color-text: #242424,
+  color-text-default: #242424,
+  color-text-secondary: #8C8C8C,
+
+  color-content: #FFFFFF,
+
+  color-link: #40A9FF,
+  color-link-hover: #1890FF,
+
+  color-primary: #1890FF,
+  color-primary-hover: #157EFB,
+
+  color-success: #52C41A,
+  color-success-hover: #389E0D,
+
+  color-warning: #FAAD14,
+  color-warning-hover: #D48806,
+
+  color-error: #F5222D,
+  color-error-hover: #CF1322,
+
+  color-level-1: rgba(#000, 0.85),
+  color-level-2: rgba(#000, 0.65),
+  color-level-3: rgba(#000, 0.45),
+  color-level-4: rgba(#000, 0.30),
+  color-level-5: rgba(#000, 0.20),
+  color-level-6: rgba(#000, 0.15),
+  color-level-7: rgba(#000, 0.10),
+  color-level-8: rgba(#000, 0.05),
+);
+
+
+@import "./_mixin_.scss";
+@include export($colors, ":export");
+@include export($colors, "html");
+
+body {
+  background: var(--dzl-color-background);
+  font-family: var(--dzl-font-family);
+  font-size: var(--dzl-font-size-regular);
+  line-height: var(--dzl-line-height-regular);
+  color: var(--dzl-color-text);
+}

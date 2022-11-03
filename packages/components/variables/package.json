@@ -2,9 +2,9 @@
   "name": "@dazzler/variables",
   "version": "1.0.0",
   "description": "Yet another ui-kit",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "style": "index.css",
+  "main": "style.js",
+  "types": "style.d.ts",
+  "style": "style.css",
   "scripts": {
     "dev": "rollup -w --config rollup.config.ts --configPlugin typescript",
     "build": "NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript"

@@ -1,16 +1,5 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "dist",
-    "module": "esnext",
-    "target": "ES2017",
-    "lib": ["dom", "es2017"],
-    "sourceMap": true,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
-  },
-  "exclude": ["**/node_modules"],
+  "extends": "@dazzler/ts-config/tsconfig.json",
+  "files": ["global.d.ts"],
   "include": ["src/index.ts"]
 }

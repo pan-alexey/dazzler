@@ -1,0 +1,53 @@
+.Divider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.Divider__line {
+  position: relative;
+  width: 100%;
+}
+
+.Divider__line_start {
+  width: 100%;
+}
+
+.Divider__line_end {
+  width: 100%;
+}
+
+.Divider__content {
+  white-space: nowrap;
+  font-size: var(--dzl-font-size-default);
+  line-height: var(--dzl-line-height-default);
+  padding: 0 var(--dzl-offset-default)
+}
+
+// Color
+.Divider_color_default > .Divider__line {
+  color: var(--dzl-color-text-default);
+}
+
+.Divider_color_secondary > .Divider_content {
+  color: var(--dzl-color-border);
+}
+
+// Variant
+.Divider_variant_default > .Divider__line {
+  border-top: 1px solid var(--dzl-color-border);
+}
+
+.Divider_variant_dashed > .Divider__line {
+  border-top: 1px dashed var(--dzl-color-border);
+}
+
+// Align
+.Divider_align_start > .Divider__line_start {
+  width: var(--dzl-offset-large);
+}
+
+.Divider_align_end > .Divider__line_end {
+  width: var(--dzl-offset-large);
+}
+

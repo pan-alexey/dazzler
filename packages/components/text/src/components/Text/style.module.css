@@ -1,0 +1,20 @@
+.root {
+  margin: 0;
+  font-size: var(--dzl-font-size-regular);
+  line-height: var(--dzl-line-height-regular);
+}
+
+.regular {
+  font-size: var(--dzl-font-size-regular);
+  line-height: var(--dzl-line-height-regular);
+}
+
+.small {
+  font-size: var(--dzl-font-size-small);
+  line-height: var(--dzl-line-height-small);
+}
+
+.large {
+  font-size: var(--dzl-font-size-large);
+  line-height: var(--dzl-line-height-large);
+}

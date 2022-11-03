@@ -1,0 +1,175 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.Text.H1{
+  font-size: var(--dzl-font-size-h1);
+  line-height: var(--dzl-line-height-h1);
+}
+
+.Text-color-level4 {
+  font-size: var(--dzl-font-size-h1);
+  line-height: var(--dzl-line-height-h1);
+}
+
+// ----- Elements ----- //
+.Text__H1 {
+  font-size: var(--dzl-font-size-h1);
+  line-height: var(--dzl-line-height-h1);
+}
+
+.Text__H2 {
+  font-size: var(--dzl-font-size-h2);
+  line-height: var(--dzl-line-height-h2);
+}
+
+.Text__H3 {
+  font-size: var(--dzl-font-size-h3);
+  line-height: var(--dzl-line-height-h3);
+}
+
+.Text__H4 {
+  font-size: var(--dzl-font-size-h4);
+  line-height: var(--dzl-line-height-h4);
+}
+
+.Text__H5 {
+  font-size: var(--dzl-font-size-h5);
+  line-height: var(--dzl-line-height-h6);
+}
+
+.Text__H6 {
+  font-size: var(--dzl-font-size-h6);
+  line-height: var(--dzl-line-height-h6);
+}
+
+// ----- Sizes ----- //
+.Text_size_regular {
+  font-size: var(--dzl-font-size-regular);
+  line-height: var(--dzl-line-height-regular);
+}
+
+.Text_size_small {
+  font-size: var(--dzl-font-size-small);
+  line-height: var(--dzl-line-height-small);
+}
+
+.Text_size_large {
+  font-size: var(--dzl-font-size-large);
+  line-height: var(--dzl-line-height-large);
+}
+
+// ----- Colors ----- //
+.Text_color_default {
+  color: var(--dzl-color-text-default);
+}
+
+.Text_color_content {
+  color: var(--dzl-color-text-content);
+}
+
+.Text_color_secondary {
+  color: var(--dzl-color-text-secondary);
+}
+
+.Text_color_primary {
+  color: var(--dzl-color-primary);
+}
+
+.Text_color_success {
+  color: var(--dzl-color-success);
+}
+
+.Text_color_warning {
+  color: var(--dzl-color-warning);
+}
+
+.Text_color_error {
+  color: var(--dzl-color-error);
+}
+
+.Text_color_error {
+  color: var(--dzl-color-error);
+}
+
+.Text_color_level-1 {
+  color: var(--dzl-color-level-1);
+}
+
+.Text_color_level-2 {
+  color: var(--dzl-color-level-2);
+}
+
+.Text_color_level-3 {
+  color: var(--dzl-color-level-3);
+}
+
+.Text_color_level-4 {
+  color: var(--dzl-color-level-4);
+}
+
+.Text_color_level-5 {
+  color: var(--dzl-color-level-5);
+}
+
+.Text_color_level-6 {
+  color: var(--dzl-color-level-6);
+}
+
+.Text_color_level-7 {
+  color: var(--dzl-color-level-7);
+}
+
+.Text_color_level-8 {
+  color: var(--dzl-color-level-8);
+}
+
+// ----- Align ----- //
+.Text_align_default, .Text_align_start {
+  text-align: start;
+}
+
+.Text_align_center {
+  text-align: center;
+}
+
+.Text_align_end {
+  text-align: end;
+}
+
+// ----- Styles ----- //
+.Text_style_uppercase {
+  text-transform: uppercase;
+}
+
+.Text_style_lowercase {
+  text-transform: lowercase;
+}
+
+.Text_style_bold {
+  font-weight: bold;
+}
+
+.Text_style_ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Text_style_under {
+  text-decoration: underline
+}
+
+.Text_style_wavy {
+  text-decoration: wavy underline;
+}
+
+.Text_style_through {
+  text-decoration: line-through;
+}

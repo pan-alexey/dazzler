@@ -1,49 +1,55 @@
 import postcss from 'rollup-plugin-postcss';
 
+const postCss = () => postcss({
+  minimize: process.env.NODE_ENV === 'production',
+  modules: true,
+  extract: true,
+});
+
 export default [
   {
-    input: 'src/index.tsx',
+    input: 'src/varibles.ts',
     output: {
-      file: 'index.js',
+      file: 'varibles.js',
       format: 'esm',
-      sourcemap: true,
+      sourcemap: false,
     },
-    plugins: [
-      postcss({
-        minimize: process.env.NODE_ENV === 'production',
-        modules: true,
-        extract: true,
-      }),
-    ]
+    plugins: [postCss()]
   },
   {
-    input: 'src/dark.tsx',
+    input: 'src/color.main.ts',
     output: {
-      file: 'dark.js',
+      file: 'color.main.js',
       format: 'esm',
-      sourcemap: true,
+      sourcemap: false,
     },
-    plugins: [
-      postcss({
-        minimize: process.env.NODE_ENV === 'production',
-        modules: true,
-        extract: true,
-      }),
-    ]
+    plugins: [postCss()]
   },
   {
-    input: 'src/light.tsx',
+    input: 'src/color.light.ts',
     output: {
-      file: 'light.js',
+      file: 'color.light.js',
       format: 'esm',
-      sourcemap: true,
+      sourcemap: false,
     },
-    plugins: [
-      postcss({
-        minimize: process.env.NODE_ENV === 'production',
-        modules: true,
-        extract: true,
-      }),
-    ]
-  }
+    plugins: [postCss()]
+  },
+  {
+    input: 'src/color.dark.ts',
+    output: {
+      file: 'color.dark.js',
+      format: 'esm',
+      sourcemap: false,
+    },
+    plugins: [postCss()]
+  },
+  {
+    input: 'src/style.ts',
+    output: {
+      file: 'style.js',
+      format: 'esm',
+      sourcemap: false,
+    },
+    plugins: [postCss()]
+  },
 ]

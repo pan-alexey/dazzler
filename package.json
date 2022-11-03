@@ -8,7 +8,8 @@
       "config/**",
       "packages/**",
       "utils/**",
-      "examples/**"
+      "examples/**",
+      "lib/**"
     ],
     "nohoist": [
       "**/jest",
@@ -18,14 +19,20 @@
     ]
   },
   "scripts": {
-    "dev": "yarn run clear && yarn run bootstrap",
-    "bootstrap": "yarn install && yarn run lerna:bootstrap",
+    "dev": "yarn run clear && yarn run bootstrap && yarn run build",
     "🔥": "----------------------------------------",
+    "bootstrap": "yarn install && yarn run lerna:bootstrap",
     "lerna:bootstrap": "lerna bootstrap",
+    "🗳️": "----------------------------------------",
     "build": "yarn run build:utils && yarn run build:components",
     "build:utils": "lerna run build --scope @dazzler/utils-*",
-    "build:components": "lerna run build --ignore @dazzler/utils-* --ignore example-*",
-    "clear": "rimraf ./**/package-lock.json && rimraf ./**/yarn.lock && rimraf ./**/dist && rimraf ./**/node_modules"
+    "build:components": "lerna run build --ignore @dazzler/utils-* --ignore @dazzler/example-* --ignore @dazzler/dazzler --ignore @dazzler/dazzler-*",
+    "build:lib": "lerna run build --scope @dazzler/dazzler --scope @dazzler/dazzler-*",
+    "🧹": "----------------------------------------",
+    "clear": "yarn run clean:src && yarn run clean:lock && yarn run clean:node_modules",
+    "clean:lock": "rimraf ./**/package-lock.json && rimraf ./**/yarn.lock",
+    "clean:src": "rimraf ./**/src/**/**.js ./**/src/**/**.js.map ./**/src/**/**.d.ts",
+    "clean:node_modules": "rimraf ./**/node_modules"
   },
   "repository": {
     "type": "git",

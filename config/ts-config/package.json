@@ -1,0 +1,12 @@
+{
+  "name": "@dazzler/ts-config",
+  "version": "1.0.0",
+  "main": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@dazzler/eslint-config": "^1.0.0",
+    "@dazzler/prettier-config": "^1.0.0"
+  }
+}

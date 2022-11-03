@@ -1,0 +1,17 @@
+.dzl-list-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dzl-list-group-hovering {
+  .dzl-list-item:hover {
+    background: var(--dzl-color-hover);
+  }
+}
+
+.dzl-list-group-divider {
+  .dzl-list-item:not(:last-child) {
+    border-bottom: 1xp solid var(--dzl-color-border);
+  }
+}
