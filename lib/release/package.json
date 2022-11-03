@@ -7,13 +7,13 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "lint": "eslint .",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "tsc": "tsc",
     "dev": "rollup -w --config rollup.config.ts --configPlugin typescript"
   },
   "repository": {
@@ -44,6 +44,6 @@
     "@rollup/plugin-node-resolve":"^14.1.0",
     "@rollup/plugin-commonjs": "^22.0.2",
     "rollup-plugin-postcss": "^4.0.2",
-    "@rollup/plugin-typescript":"^8.5.0"
+    "@rollup/plugin-babel": "^6.0.2"
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { HeadingProps } from './types';
+import { HeadingProps } from './types';
 import style from './style.module.css';
 import colorStyle from '../../common/color.module.css';
 import alignStyle from '../../common/align.module.css';

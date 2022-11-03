@@ -1,25 +1,30 @@
 import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
+import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     {
+      file: 'dist/bundle.js',
       format: 'cjs',
-      sourcemap: true,
-      name: 'react-lib',
-      file: 'dist/index.js',
+      name: 'dazzler',
     },
   ],
   plugins: [
     peerDepsExternal(),
-    nodeResolve(),
+    resolve(),
+    commonjs(),
+    typescript({
+      declaration: true,
+      declarationDir: 'dist',
+      sourceMap: true
+    }),
     postcss({
       modules: true,
       extract: 'style.global.css',
     }),
-    commonjs(),
   ],
 };

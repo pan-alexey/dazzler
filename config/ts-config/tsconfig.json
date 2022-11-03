@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "module": "esnext",
     "target": "esnext",
-    "lib": ["dom", "esnext"],
+    "lib": ["esnext", "dom"],
     "sourceMap": true,
     "jsx": "react",
     "moduleResolution": "node",
