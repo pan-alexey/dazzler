@@ -1,6 +1,7 @@
 #nodejs
 node_modules
 
+.backup
 dist
 src/**/*.js
 

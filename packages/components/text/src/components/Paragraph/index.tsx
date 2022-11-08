@@ -1,10 +1,10 @@
 import React from 'react';
-import { ParagraphProps } from './types';
 import style from './style.module.css';
 import colorStyle from '../../common/color.module.css';
 import alignStyle from '../../common/align.module.css';
 import subsetStyle from '../../common/subset.module.css';
 import decorationStyle from '../../common/decoration.module.css';
+import { ParagraphProps } from './types';
 
 const Paragraph = React.forwardRef<HTMLParagraphElement, ParagraphProps>(
   (props, ref) => {

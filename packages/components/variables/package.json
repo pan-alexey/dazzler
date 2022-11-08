@@ -7,7 +7,8 @@
   "style": "style.css",
   "scripts": {
     "dev": "rollup -w --config rollup.config.ts --configPlugin typescript",
-    "build": "NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript"
+    "build": "NODE_ENV=production rollup --config rollup.config.ts --configPlugin typescript",
+    "clean": "rimraf ./**.js ./**.css"
   },
   "repository": {
     "type": "git",

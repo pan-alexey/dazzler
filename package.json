@@ -6,16 +6,18 @@
   "workspaces": {
     "packages": [
       "config/**",
-      "packages/**",
+      "rollup/**",
       "utils/**",
-      "examples/**",
-      "lib/**"
+      "packages/**",
+      "main/**",
+      "examples/**"
     ],
     "nohoist": [
       "**/jest",
       "**/ts-node",
       "**/@dazzler/eslint-*",
-      "**/@dazzler/prettier-*"
+      "**/@dazzler/prettier-*",
+      "**/@dazzler/ts-config"
     ]
   },
   "scripts": {
@@ -24,12 +26,14 @@
     "bootstrap": "yarn install && yarn run lerna:bootstrap",
     "lerna:bootstrap": "lerna bootstrap",
     "🗳️": "----------------------------------------",
-    "build": "yarn run build:utils && yarn run build:components",
+    "build": "yarn run build:rollup && yarn run build:utils && yarn run build:components && yarn run build:main",
+    "build:rollup": "lerna run build --scope @dazzler/rollup-*",
     "build:utils": "lerna run build --scope @dazzler/utils-*",
-    "build:components": "lerna run build --ignore @dazzler/utils-* --ignore @dazzler/example-* --ignore @dazzler/dazzler --ignore @dazzler/dazzler-*",
-    "build:lib": "lerna run build --scope @dazzler/dazzler --scope @dazzler/dazzler-*",
+    "build:components": "lerna run build --ignore @dazzler/utils-* --ignore @dazzler/rollup-* --ignore @dazzler/example-* --ignore @dazzler/dazzler --ignore @dazzler/dazzler-*",
+    "build:main": "lerna run build --scope @dazzler/dazzler --scope @dazzler/dazzler-*",
     "🧹": "----------------------------------------",
-    "clear": "yarn run clean:src && yarn run clean:lock && yarn run clean:node_modules",
+    "clear": "yarn run clean:dist && yarn run clean:src && yarn run clean:lock && yarn run clean:node_modules",
+    "clean:dist": "rimraf ./**/dist",
     "clean:lock": "rimraf ./**/package-lock.json && rimraf ./**/yarn.lock",
     "clean:src": "rimraf ./**/src/**/**.js ./**/src/**/**.js.map ./**/src/**/**.d.ts",
     "clean:node_modules": "rimraf ./**/node_modules"
@@ -45,7 +49,7 @@
   },
   "homepage": "https://github.com/pan-alexey/dazzler#readme",
   "dependencies": {
-    "lerna": "^5.5.4"
+    "lerna": "^6.0.3"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
