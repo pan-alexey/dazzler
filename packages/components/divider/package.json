@@ -1,0 +1,35 @@
+{
+  "name": "@dazzler/divider",
+  "version": "1.0.0",
+  "description": "Yet another ui-kit",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "rollup -w --config rollup.config.ts --configPlugin typescript",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pan-alexey/dazzler.git"
+  },
+  "author": "Pan Alexey [pan-alexey@live.com]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pan-alexey/dazzler/issues"
+  },
+  "homepage": "https://github.com/pan-alexey/dazzler#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@dazzler/eslint-config": "^1.0.0",
+    "@dazzler/prettier-config": "^1.0.0",
+    "@dazzler/ts-config": "^1.0.0",
+    "@dazzler/rollup-config": "^1.0.0"
+  }
+}

@@ -22,11 +22,11 @@
     "url": "https://github.com/pan-alexey/dazzler/issues"
   },
   "homepage": "https://github.com/pan-alexey/dazzler#readme",
-  "peerDependencies": {
-    "react": ">=18.0.0"
+  "dependencies": {
+    "react": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.18",
+    "@types/react": "^18.2.6",
     "@dazzler/eslint-config": "^1.0.0",
     "@dazzler/prettier-config": "^1.0.0",
     "@dazzler/ts-config": "^1.0.0",

@@ -3,25 +3,19 @@
   flex-direction: column;
 }
 
-.itemIcon {
-  font-size: 24px;
+.head {
   display: flex;
+  height: 48px;
 }
 
-.routerLink {
-  display: block;
-  text-decoration: none;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-      text-decoration: none;
-  }
+.logo {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
 }
 
-.text__children {
-  border: 1px solid red;
+.body {
   display: flex;
+  overflow-y: auto;
+  flex-direction: column;
 }

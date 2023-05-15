@@ -1,8 +1,8 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
-import mirror from '@dazzler/rollup-mirror';
+import mirror from './plugins/mirror';
+import terser from '@rollup/plugin-terser';
 const cssExternals = /\.css$/;
 
 export default () => {
@@ -17,12 +17,12 @@ export default () => {
         preserveModulesRoot: 'src',
       },
     ],
-    external: [cssExternals],
+    external: [cssExternals, 'react', 'react-dom'],
     plugins: [
-      peerDepsExternal(),
       resolve(),
       commonjs(),
       typescript(),
+      terser(),
       mirror({
         src: './src',
         target: './dist',

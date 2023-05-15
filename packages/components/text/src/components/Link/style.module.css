@@ -2,6 +2,11 @@
   margin: 0;
   font-size: var(--dzl-font-size-regular);
   line-height: var(--dzl-line-height-regular);
+  color: var(--dzl-color-link);
+}
+
+.root:hover {
+  color: var(--dzl-color-link-hover);
 }
 
 .regular {

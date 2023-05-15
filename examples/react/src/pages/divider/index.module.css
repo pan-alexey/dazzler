@@ -1,0 +1,29 @@
+.root {
+  padding: 15px;
+}
+
+.example {
+  margin-top: var(--dzl-offset-large);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  outline: none;
+  display: inline-block;
+  width: max-content;
+  padding: var(--dzl-offset-vertical) var(--dzl-offset-horizontal);
+  border: var(--dzl-border-width) solid var(--dzl-color-primary);
+  border-radius: var(--dzl-border-radius);
+  color: var(--dzl-color-content);
+  background: var(--dzl-color-primary-hover);
+}
+
+.button:hover {
+  background: var(--dzl-color-primary);
+  cursor: pointer;
+}

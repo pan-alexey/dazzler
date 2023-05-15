@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { ThemeProvider } from '../../../context/theme';
-import { Button } from '../';
+import { DividerPage } from '..';
 
 test('Header contains correct text', () => {
   render(
     <div data-testid='root'>
       <ThemeProvider>
-        <Button />
+        <DividerPage />
       </ThemeProvider>
     </div>,
   );

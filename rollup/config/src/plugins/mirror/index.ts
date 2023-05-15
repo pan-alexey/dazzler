@@ -2,6 +2,7 @@ import build from './components/build';
 import watch from './components/watch';
 
 import { PluginImpl } from 'rollup';
+
 export interface Options {
   src: string;
   target: string;

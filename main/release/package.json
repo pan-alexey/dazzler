@@ -26,10 +26,8 @@
     "url": "https://github.com/pan-alexey/dazzler/issues"
   },
   "homepage": "https://github.com/pan-alexey/dazzler#readme",
-  "peerDependencies": {
-    "react": ">=18.0.0"
-  },
   "dependencies": {
+    "react": "^18.2.0",
     "@dazzler/text": "^1.0.0"
   },
   "devDependencies": {

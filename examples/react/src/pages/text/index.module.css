@@ -1,0 +1,17 @@
+.root {
+  padding: 15px;
+}
+
+.example {
+  margin-top: var(--dzl-offset-large);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.headingExample {
+  display: flex;
+  flex-direction: column;
+}

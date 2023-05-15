@@ -1,0 +1,7 @@
+.body {
+  font-family: var(--dzl-font-family);
+  font-size: var(--dzl-font-size-regular);
+  line-height: var(--dzl-line-height-regular);
+  background: var(--dzl-color-background);
+  color: var(--dzl-color-text);
+}

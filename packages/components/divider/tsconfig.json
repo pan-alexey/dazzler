@@ -1,0 +1,5 @@
+{
+  "extends": "@dazzler/ts-config/tsconfig.json",
+  "files": ["global.d.ts"],
+  "include": ["src/index.ts"]
+}

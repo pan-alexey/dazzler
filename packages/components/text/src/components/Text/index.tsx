@@ -4,6 +4,7 @@ import style from './style.module.css';
 import colorStyle from '../../common/color.module.css';
 import alignStyle from '../../common/align.module.css';
 import subsetStyle from '../../common/subset.module.css';
+import decorationStyle from '../../common/decoration.module.css';
 
 const Text = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => {
   const {
@@ -31,7 +32,7 @@ const Text = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => {
         uppercase ? subsetStyle.uppercase : '',
         lowercase ? subsetStyle.lowercase : '',
         ellipsis ? subsetStyle.ellipsis : '',
-        decoration ? subsetStyle[`decoration-${decoration}`] : '',
+        decoration ? decorationStyle[`decoration-${decoration}`] : '',
         className,
       ]
         .filter(Boolean)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiMeteorFill, RiSunFill, RiMoonClearFill } from 'react-icons/ri';
+import { RiSunFill, RiMoonClearFill } from 'react-icons/ri';
 import { useTheme } from '../../context/theme';
 import style from './index.module.scss';
 
@@ -23,18 +23,13 @@ const ThemeSwitcher: React.FC = () => {
 
 export const Navbar = () => {
   return (
-    <>
-      <div className={style.logo}>
-        <RiMeteorFill />
-        <div className={style.logoName}>Dazzler</div>
-      </div>
-
+    <div className={style.root}>
       <div className={style.content}>
         links
         <div className={style.actions}>
           <ThemeSwitcher />
         </div>
       </div>
-    </>
+    </div>
   );
 };
