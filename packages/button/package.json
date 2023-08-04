@@ -1,0 +1,21 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pan-alexey/dazzler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pan-alexey/dazzler/issues"
+  },
+  "homepage": "https://github.com/pan-alexey/dazzler#readme",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "typescript": "^5.1.6"
+  }
+}
