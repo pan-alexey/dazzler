@@ -20,7 +20,6 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   webpackFinal: async (config: webpack.Configuration) => {
-
     config.module?.rules?.push({
       test: /\.(ts|tsx)$/,
       loader: require.resolve('babel-loader'),

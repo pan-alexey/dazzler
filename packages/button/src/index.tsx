@@ -4,7 +4,7 @@ import './styles.css';
 interface ButtonProps {
   primary?: boolean;
   backgroundColor?: string;
-  size?: 'l' | 'xl';
+  size?: 'l' | 'xl' | 'm';
   children?: React.ReactNode;
 }
 
